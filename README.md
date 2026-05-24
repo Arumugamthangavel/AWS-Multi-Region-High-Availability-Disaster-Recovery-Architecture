@@ -29,10 +29,21 @@ The project uses AWS Console for deployment and configuration.
 ### VPC-1 (North Virginia)
 CIDR: `192.168.0.0/24`
 
-### VPC-2 (Mumbai)
-CIDR: `192.69.0.0/24`
+VPC-1 contains:
 
-Each VPC contains:
+| Subnet | Type | Purpose |
+|---|---|---|
+| sn-1 | Public | Jump Server |
+| sn-2 | Public | NAT Gateway |
+| sn-3 | Private | APP-1 Server |
+| sn-4 | Private | APP-2 Server |
+| sn-5 | Private | SQL Server |
+| sn-6 | Private | Reserved |
+
+### VPC-2 (Mumbai)
+CIDR: `192.168.0.0/24`
+
+VPC-2 contains:
 
 | Subnet | Type | Purpose |
 |---|---|---|
