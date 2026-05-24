@@ -1,0 +1,122 @@
+AWS-Multi-Region-HA-DR-Architecture/
+│
+├── README.md
+├── LICENSE
+├── .gitignore
+│
+├── architecture/
+│   ├── architecture-diagram.png
+│   ├── architecture-diagram-high-quality.png
+│   └── aws-components-reference.png
+│
+├── screenshots/
+│   ├── vpc/
+│   │   ├── vpc-1-overview.png
+│   │   ├── vpc-2-overview.png
+│   │   └── subnet-configuration.png
+│   │
+│   ├── ec2/
+│   │   ├── app1-instance.png
+│   │   ├── app2-instance.png
+│   │   ├── sql-server.png
+│   │   └── jump-server.png
+│   │
+│   ├── ebs/
+│   │   ├── ebs-1gb-volume.png
+│   │   ├── snapshot-created.png
+│   │   ├── snapshot-copy-region.png
+│   │   ├── ebs-2gb-volume.png
+│   │   └── volume-resize-proof.png
+│   │
+│   ├── efs/
+│   │   ├── efs-created.png
+│   │   ├── efs-mounted-app1.png
+│   │   ├── efs-mounted-app2.png
+│   │   └── folder-structure.png
+│   │
+│   ├── s3/
+│   │   ├── bucket-1.png
+│   │   ├── bucket-2.png
+│   │   ├── replication-rule.png
+│   │   └── sync-output.png
+│   │
+│   ├── networking/
+│   │   ├── vpc-peering.png
+│   │   ├── route-table.png
+│   │   ├── security-group.png
+│   │   └── nat-gateway.png
+│   │
+│   ├── load-balancer/
+│   │   ├── v1-lb.png
+│   │   ├── v2-lb.png
+│   │   └── target-groups.png
+│   │
+│   ├── cloudfront/
+│   │   ├── cloudfront-distribution.png
+│   │   └── static-website.png
+│   │
+│   └── route53/
+│       ├── hosted-zone.png
+│       ├── v1-record.png
+│       └── v2-record.png
+│
+├── docs/
+│   ├── project-overview.md
+│   ├── architecture-explanation.md
+│   ├── deployment-steps.md
+│   ├── troubleshooting.md
+│   ├── learning-outcomes.md
+│   └── interview-questions.md
+│
+├── commands/
+│   ├── aws-cli-commands.md
+│   ├── ebs-commands.md
+│   ├── efs-commands.md
+│   ├── s3-sync-commands.md
+│   └── validation-commands.md
+│
+├── app-data/
+│   ├── region-1/
+│   │   ├── app-1/
+│   │   │   └── doc/
+│   │   │       ├── sample1.txt
+│   │   │       └── sample2.txt
+│   │   │
+│   │   └── app-2/
+│   │       └── voice/
+│   │           ├── voice1.mp3
+│   │           └── voice2.mp3
+│   │
+│   └── region-2/
+│       ├── app-1/
+│       │   └── doc/
+│       └── app-2/
+│           └── voice/
+│
+├── efs-content/
+│   ├── F1/
+│   │   └── index.html
+│   ├── F2/
+│   │   └── index.html
+│   ├── F3/
+│   │   └── index.html
+│   └── F4/
+│       └── index.html
+│
+├── scripts/
+│   ├── ebs-resize.sh
+│   ├── efs-mount.sh
+│   ├── s3-sync.sh
+│   └── validation.sh
+│
+├── outputs/
+│   ├── df-h-output.txt
+│   ├── lsblk-output.txt
+│   ├── mount-output.txt
+│   └── replication-output.txt
+│
+└── assets/
+    ├── sample-image.png
+    ├── aws-icons/
+    └── banners/
+        └── github-banner.png
