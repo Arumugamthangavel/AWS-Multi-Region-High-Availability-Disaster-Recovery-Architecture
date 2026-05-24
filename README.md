@@ -240,15 +240,3 @@ Subdomains:
 | v2.sample.xyz | v2-LB  |
 
 ---
-
-# Project Workflow
-
-1. User accesses domain
-2. Route53 resolves DNS
-3. CloudFront delivers cached content
-4. ALB routes traffic to application servers
-5. EFS provides shared storage
-6. S3 handles backup and replication
-7. Snapshot ensures disaster recovery
-
----
