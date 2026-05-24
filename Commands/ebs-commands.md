@@ -104,7 +104,7 @@ Reason:
 To solve this, I used:
 
 ```bash id="x4pqv2"
-echo "Hello from Region-1" | sudo tee /data/sample.txt
+echo "Hello i'm arumugam from Region-1" | sudo tee /data/sample.txt
 ```
 
 Verified using:
@@ -116,7 +116,7 @@ cat /data/sample.txt
 Output:
 
 ```text id="mw1t86"
-Hello from Region-1
+Hello i'm arumugam from Region-1
 ```
 
 ---
