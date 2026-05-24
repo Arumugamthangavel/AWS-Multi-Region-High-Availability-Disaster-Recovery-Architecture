@@ -27,7 +27,7 @@ The project uses AWS Console for deployment and configuration.
 ## Networking
 
 ### VPC-1 (North Virginia)
-CIDR: `192.68.0.0/24`
+CIDR: `192.168.0.0/24`
 
 ### VPC-2 (Mumbai)
 CIDR: `192.69.0.0/24`
