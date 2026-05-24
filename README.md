@@ -1,7 +1,7 @@
 # AWS Multi-Region High Availability & Disaster Recovery Architecture
 # Architecture Diagram
 
-![AWS Architecture](architecture.png)
+![AWS Architecture](architecture.png.png)
 ## Project Overview
 
 This project demonstrates a complete Multi-Region AWS Infrastructure setup designed for:
