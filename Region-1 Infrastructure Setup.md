@@ -27,7 +27,7 @@ This phase focuses on building the core networking and compute infrastructure in
 
 ---
 
-# Subnet Configuration
+## Subnet Configuration
 
 | Subnet | CIDR             | Type    | Availability Zone |
 | ------ | ---------------- | ------- | ----------------- |
@@ -40,7 +40,7 @@ This phase focuses on building the core networking and compute infrastructure in
 
 ---
 
-# Internet Gateway
+## Internet Gateway
 
 | Resource         | Name       |
 | ---------------- | ---------- |
@@ -50,7 +50,7 @@ The Internet Gateway was attached to `vpc-1` to allow public internet access.
 
 ---
 
-# NAT Gateway
+## NAT Gateway
 
 | Resource    | Name       |
 | ----------- | ---------- |
@@ -65,7 +65,7 @@ The NAT Gateway allows private instances to access the internet securely without
 
 ---
 
-# Route Table Configuration
+## Route Table Configuration
 
 ### Public Route Table
 
@@ -97,7 +97,7 @@ Associated Subnets:
 
 ---
 
-# EC2 Instance Configuration
+## EC2 Instance Configuration
 
 | Instance    | AMI                   | Subnet | Type    |
 | ----------- | --------------------- | ------ | ------- |
@@ -108,7 +108,7 @@ Associated Subnets:
 
 ---
 
-# Security Group Configuration
+## Security Group Configuration
 
 ### Jump Server Security Group
 
@@ -126,39 +126,13 @@ Associated Subnets:
 
 ---
 
-# Key Pair
+## Key Pair
 
 | Resource | Name             |
 | -------- | ---------------- |
 | Key Pair | `devops-key.pem` |
 
 The same key pair was used for all EC2 instances.
-
----
-
-# SSH Connectivity Testing
-
-### Connect to Jump Server
-
-```bash
-ssh -i devops-key.pem ec2-user@<jump-server-public-ip>
-```
-
----
-
-### Connect to Private App-1 Server from Jump Server
-
-```bash
-ssh -i devops-key.pem ec2-user@<private-ip-app1>
-```
-
----
-
-### Connect to Private App-2 Server from Jump Server
-
-```bash
-ssh -i devops-key.pem ubuntu@<private-ip-app2>
-```
 
 ---
 
