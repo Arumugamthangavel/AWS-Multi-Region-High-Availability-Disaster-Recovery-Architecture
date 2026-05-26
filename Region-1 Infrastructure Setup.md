@@ -67,7 +67,7 @@ The NAT Gateway allows private instances to access the internet securely without
 
 # Route Table Configuration
 
-## Public Route Table
+### Public Route Table
 
 | Destination     | Target           |
 | --------------- | ---------------- |
@@ -81,7 +81,7 @@ Associated Subnets:
 
 ---
 
-## Private Route Table
+### Private Route Table
 
 | Destination     | Target      |
 | --------------- | ----------- |
@@ -110,7 +110,7 @@ Associated Subnets:
 
 # Security Group Configuration
 
-## Jump Server Security Group
+### Jump Server Security Group
 
 | Type | Port | Source |
 | ---- | ---- | ------ |
@@ -118,7 +118,7 @@ Associated Subnets:
 
 ---
 
-## Private Server Security Group
+### Private Server Security Group
 
 | Type | Port | Source                     |
 | ---- | ---- | -------------------------- |
@@ -138,7 +138,7 @@ The same key pair was used for all EC2 instances.
 
 # SSH Connectivity Testing
 
-## Connect to Jump Server
+### Connect to Jump Server
 
 ```bash
 ssh -i devops-key.pem ec2-user@<jump-server-public-ip>
@@ -146,7 +146,7 @@ ssh -i devops-key.pem ec2-user@<jump-server-public-ip>
 
 ---
 
-## Connect to Private App-1 Server from Jump Server
+### Connect to Private App-1 Server from Jump Server
 
 ```bash
 ssh -i devops-key.pem ec2-user@<private-ip-app1>
@@ -154,7 +154,7 @@ ssh -i devops-key.pem ec2-user@<private-ip-app1>
 
 ---
 
-## Connect to Private App-2 Server from Jump Server
+### Connect to Private App-2 Server from Jump Server
 
 ```bash
 ssh -i devops-key.pem ubuntu@<private-ip-app2>
@@ -162,7 +162,7 @@ ssh -i devops-key.pem ubuntu@<private-ip-app2>
 
 ---
 
-# NAT Gateway Validation
+## NAT Gateway Validation
 
 Tested internet connectivity from private servers.
 
@@ -184,24 +184,9 @@ Successful package updates confirmed that private servers accessed the internet 
 
 ---
 
-# Deliverables Completed ✅
-
-| Task                            | Status |
-| ------------------------------- | ------ |
-| VPC Created                     | ✅      |
-| 6 Subnets Configured            | ✅      |
-| Internet Gateway Attached       | ✅      |
-| NAT Gateway Configured          | ✅      |
-| Public Route Table Created      | ✅      |
-| Private Route Table Created     | ✅      |
-| EC2 Instances Launched          | ✅      |
-| Security Groups Configured      | ✅      |
-| SSH Access Working              | ✅      |
-| Private Internet Access Working | ✅      |
-
 ---
 
-# Screenshots Section 📸
+## Screenshots Section 
 
 ---
 
