@@ -87,7 +87,7 @@ tmpfs              92M     0   92M   0% /run/user/1000
 Initially, I tried:
 
 ```bash id="q8rgtw"
-echo "Hello from Region-1" > /data/sample.txt
+echo "Hello i'm arumugam from Region-1" > /data/sample.txt
 ```
 
 But encountered this error:
