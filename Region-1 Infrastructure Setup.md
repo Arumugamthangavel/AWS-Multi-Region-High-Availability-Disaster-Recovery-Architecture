@@ -16,42 +16,12 @@ This phase focuses on building the core networking and compute infrastructure in
 
 ---
 
-## Architecture Diagram
-
-## Network Layout
-
-```text
-Internet
-   │
-   ▼
-Internet Gateway
-   │
-   ▼
-Public Route Table
-   │
- ┌───────────────┐
- │               │
- ▼               ▼
-SN1            SN2
-(Jump)       (NAT Gateway)
- │
- ▼
-Private Route Table
- │
- ├──────────────┬──────────────┬──────────────┐
- ▼              ▼              ▼              ▼
-SN3            SN4            SN5            SN6
-App-1         App-2         SQL Server      Reserved
-```
-
----
-
-# VPC Configuration
+## VPC Configuration
 
 | Resource       | Configuration   |
 | -------------- | --------------- |
 | VPC            | `vpc-1`         |
-| CIDR           | `192.68.0.0/24` |
+| CIDR           | `192.168.0.0/24` |
 | DNS Hostname   | Enabled         |
 | DNS Resolution | Enabled         |
 
