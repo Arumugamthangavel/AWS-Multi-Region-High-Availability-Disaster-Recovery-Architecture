@@ -1,6 +1,6 @@
 # Disaster Recovery using EBS Snapshot 
 
-Simulate disaster recovery by restoring an EBS snapshot from North Virginia Region into Mumbai Region
+Simulate disaster recovery by restoring an EBS snapshot from North Virginia Region into Mumbai Region. Continuation of EBS task.
 
 Tasks performed:
 
@@ -8,12 +8,11 @@ Tasks performed:
 - Attached volume to Mumbai Region App-1
 - Mounted filesystem
 - Verified recovered data
-- Expanded volume from 1GB → 2GB
 - Extended filesystem without reboot
 
 ---
 
-### Step 1 — Create Volume from Snapshot
+### Create Volume from Snapshot
 
 AWS Console:
 
@@ -29,7 +28,7 @@ Configuration:
 
 ---
 
-### Step 2 — Attach Volume
+### Attach Volume
 
 Attached restored volume to:
 
@@ -43,7 +42,7 @@ Device name used:
 
 ---
 
-#C# Step 3 — Verify Attached Volume
+### Verify Attached Volume
 
 ```bash
 lsblk
@@ -60,7 +59,7 @@ nvme2n1       259:5    0   1G  0 disk
 
 ---
 
-### Step 4 — Mount Restored Volume
+### Mount Restored Volume
 
 Created mount point:
 
@@ -76,7 +75,7 @@ sudo mount /dev/nvme2n1 /data
 
 ---
 
-### Step 5 — Initial Issue Encountered
+### Initial Issue Encountered
 
 Initially:
 
@@ -100,7 +99,7 @@ This helped understand an important disaster recovery lesson:
 
 ---
 
-### Step 6 — Recreated Snapshot with Proper Data
+### Recreated Snapshot with Proper Data
 
 Back in Region-1:
 
@@ -112,11 +111,11 @@ Created new snapshot and copied it again to Mumbai.
 
 ---
 
-### Step 7 — Filesystem Repair
+### Filesystem Repair
 
 Encountered mount error:
 
-```bash
+```
 wrong fs type, bad superblock
 ```
 
@@ -142,7 +141,7 @@ Mounted successfully after repair.
 
 ---
 
-### Step 8 — Verify Disaster Recovery Data
+### Verify Disaster Recovery Data
 
 ```bash
 cat /data/sample.txt
@@ -158,23 +157,7 @@ Cross-region recovery successful.
 
 ---
 
-### Step 9 — Expand EBS Volume
-
-Modified volume in AWS Console:
-
-```text
-1GB → 2GB
-```
-
-Verified:
-
-```bash
-lsblk
-```
-
----
-
-### Step 10 — Extend Filesystem Without Reboot
+### Extend Filesystem Without Reboot
 
 Used:
 
