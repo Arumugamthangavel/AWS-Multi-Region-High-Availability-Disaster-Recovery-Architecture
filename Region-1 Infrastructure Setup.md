@@ -166,9 +166,8 @@ Successful package updates confirmed that private servers accessed the internet 
 
 ## 1. VPC Dashboard
 
-```text
-Screenshots/Region-1 Infrastructure Setup/vpc-dashboard.png
-```
+![VPC Dashboard](Screenshots/Region-1 Infrastructure Setup/vpc-dashboard.png)
+
 
 ---
 
