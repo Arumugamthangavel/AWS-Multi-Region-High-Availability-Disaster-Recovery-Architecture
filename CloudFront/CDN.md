@@ -7,7 +7,7 @@ Objectives:
 * using aws in mumbai region to create S3 bucket.
 * I naming it zentechs.site
 * uploaing some random image that i have downloaded downloaded.
--[screenshot of creation of bucket]
+![AWS Architecture](Architecture/architecture.png)
 
 ## making object public
 Making the bucket public temporarily. To Verify the image opens. Then create CloudFront.
