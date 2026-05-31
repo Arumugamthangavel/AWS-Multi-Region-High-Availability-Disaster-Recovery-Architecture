@@ -29,18 +29,24 @@ Making the bucket public temporarily. To Verify the image opens. Then create Clo
 }
 ```
 * after that copy the URL and check if it is working
--[screenshot of image-working]
+---
+![S3 Public Object](screenshots/image-public%20for%20s3.png)
 
 ## Creating CloudFront Distribution
 * for Origin Domain: Selected my S3 bucket (zentechs.site)
 * created a cloudfront distribution.
-[screenshot of cdn creation]
-* checking with domain name if it is working.
-[screenshot of cdn-url]
+---
+![CDN CREATION](screenshots/showing%20cdn%20is%20created.png)
 
-## Now try with html.index
+* checking with domain name if it is working.
+---
+![domain name checking](screenshots/cdn-static%20hosting.png)
+
+## Now try with Portfolio 
 * adding my portfolio html,css and js on S3 buckect
+----
 [ screenshot ]
+![S3 upload for html](screenshots/s3-html%20and%20other.png)
 * configure CloudFront "default root object"
 ```
 Default Root Object
@@ -48,3 +54,7 @@ Default Root Object
 ```
 * now checked with cnd domain if it worked
 [screenshot of cdn-html]
+![cnd domain check](screenshots/cdn-html%20working.png)
+______________________________________________________
+
+### Hence, successfully built a real CDN-backed static website
