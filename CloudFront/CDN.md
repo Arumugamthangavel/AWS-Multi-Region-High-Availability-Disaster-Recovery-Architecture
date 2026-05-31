@@ -6,9 +6,9 @@ Objectives:
 ## Creating S3 Bucket
 * using aws in mumbai region to create S3 bucket.
 * I naming it zentechs.site
-* uploaing some random image that i have downloaded downloaded.
+* uploaing some random image that i have downloaded.
 ----
-![S3 Image Upload](CloudFront/screenshots/s3-image-upload.png)
+![S3 Image Upload](screenshots/s3-image-upload.png)
 
 ## making object public
 Making the bucket public temporarily. To Verify the image opens. Then create CloudFront.
