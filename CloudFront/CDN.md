@@ -10,6 +10,7 @@ Objectives:
 -[screenshot of creation of bucket]
 
 ## making object public
+Making the bucket public temporarily. To Verify the image opens. Then create CloudFront.
 * first, disable block public access and save it
 * second, adding a buckect pocily
 ```
