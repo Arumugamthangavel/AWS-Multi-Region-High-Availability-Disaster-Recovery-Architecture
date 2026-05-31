@@ -36,3 +36,14 @@ Making the bucket public temporarily. To Verify the image opens. Then create Clo
 [screenshot of cdn creation]
 * checking with domain name if it is working.
 [screenshot of cdn-url]
+
+## Now try with html.index
+* adding my portfolio html,css and js on S3 buckect
+[ screenshot ]
+* configure CloudFront "default root object"
+```
+Default Root Object
+ index.html
+```
+* now checked with cnd domain if it worked
+[screenshot of cdn-html]
