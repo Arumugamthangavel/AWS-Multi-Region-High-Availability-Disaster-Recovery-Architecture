@@ -1,4 +1,4 @@
-# Load balaancer 
+# Load balancer 
 Objectives:
 * creating Load balancer on North Virginia region
 * to v1 virtual private cloud
