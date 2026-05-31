@@ -5,7 +5,7 @@ Objectives:
 
 ## Creating S3 Bucket
 * using aws in mumbai region to create S3 bucket.
-* naming it zentechs.site
+* I naming it zentechs.site
 * uploaing some random image that i have downloaded downloaded.
 -[screenshot of creation of bucket]
 
@@ -29,3 +29,10 @@ Making the bucket public temporarily. To Verify the image opens. Then create Clo
 ```
 * after that copy the URL and check if it is working
 -[screenshot of image-working]
+
+## Creating CloudFront Distribution
+* for Origin Domain: Selected my S3 bucket (zentechs.site)
+* created a cloudfront distribution.
+[screenshot of cdn creation]
+* checking with domain name if it is working.
+[screenshot of cdn-url]
