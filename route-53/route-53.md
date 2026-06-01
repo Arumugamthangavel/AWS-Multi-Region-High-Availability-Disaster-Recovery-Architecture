@@ -21,7 +21,7 @@ Objectives:
 nslookup -type=ns zentechs.site
 ```
 ---- 
-[screenshot of terminal]
+![terminal check](screenshots/terminal-check.png)
 
 ## Creating Record for v1-lb in route 53
 * in Hosted Zones from Router 53. Clicked zentechs.site
@@ -58,10 +58,10 @@ v1-lb-123456789.us-east-1.elb.amazonaws.com
 ```
 nslookup v1.zentechs.site
 ```
-!verify DNS()
+![verify]DNS()
 * Final Browser Test
 ```
 http://v1.zentechs.site
 ```
-!f1 verify()
-!f2 verify()
+![f1 verify]()
+![f2 verify]()
