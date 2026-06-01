@@ -15,7 +15,7 @@ Objectives:
 * saved it and verified it with DNS checker
 * in DNS checker, typed zentechs.site on search bar and choosed NS record.
 ----
-[DNS screenshoot ]
+![DNS-CHECK](screenshots/dns-checker.png)
 * also, verified Route 53 is active in terminal with command
 ```
 nslookup -type=ns zentechs.site
